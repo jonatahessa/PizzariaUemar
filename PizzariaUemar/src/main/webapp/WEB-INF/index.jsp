@@ -16,22 +16,23 @@
         <link href="https://fonts.googleapis.com/css?family=Jaldi" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Semi+Expanded" rel="stylesheet">
         <link rel="shortcut icon" href="./_imagens/favicon.ico" />
         <script type="text/javascript" src="./_resources/domPaginaInicial.js"></script>
-        <title>Modelo Pizzaria</title>
+        <title>Pizzaria Uemar</title>
     </head>
     <body>
         <section id="principal">
-            <div id="menu">
-                <ul>
-                  <li><button type="button" id="buttoncontato">Contato</button></li>
-                  <li><button type="button" id="buttonlocalizacao">Localização</button></li>
-                  <li><button type="button" id="buttoncardapio">Cardápio</button></li>
-                  <li><button type="button" id="buttonpromocoes">Promoções</button></li>
-                  <li><button type="button" id="buttonnossacasa">A Uemar</button></li>
-                  <li><button type="button" id="buttonhome">Home</button></li>
-                </ul>
-            </div>
+          <div id="menu">
+            <ul>
+              <li><button type="button" id="buttoncontato">Contato</button></li>
+              <li><button type="button" id="buttonlocalizacao">Localização</button></li>
+              <li><button type="button" id="buttoncardapio">Cardápio</button></li>
+              <li><button type="button" id="buttonpromocoes">Promoções</button></li>
+              <li><button type="button" id="buttonnossacasa">A Uemar</button></li>
+              <li><button type="button" id="buttonhome">Home</button></li>
+            </ul>
+          </div>
 
             <div id="firstimg">
               <img src="_imagens/logoUemar.jpg" alt="logo da pizzaria uemar">
@@ -70,7 +71,8 @@
                             <th id="numeropizza">Número</th>
                             <th id="saborpizza">Sabor</th>
                             <th id="descricao">Ingredientes</th>
-                            <th id="precopizza">Preço</th>
+                            <th id="precopizza">Grande</th>
+                            <th id="precobroto">Broto</th>
                         </tr>
                         <c:forEach var="pizza" items="${pizzas}">
                             <tr>
@@ -78,51 +80,35 @@
                                 <td class="celulas">${pizza.nome}</td>
                                 <td>${pizza.descricao}</td>
                                 <td class="celulas">${pizza.preco}</td>
+                                <td class="celulas">${pizza.precoBroto}</td>
                             </tr>
                         </c:forEach>
                     </table>
                     <button class="buttonsfecharpizzas" type="button" name="fecharcardapio">Fechar</button>
                 </div>
 
-                <button id="abreesfirras" type="button" name="abreesfirras">Abrir Esfihas</button>
-
-                <div class="mostraresfirras">
-                    <button class="buttonsfecharesfirras" type="button" name="fecharcardapio">Fechar</button>
-                    <p>*Esfihas fechadas + 1,00.</p>
+                <button id="abrepizzasdoces" type="button" name="abrepizzasdoces">Abrir Pizzas Doces</button>
+                <div class="mostrarpizzasdoces">
+                    <button class="buttonsfecharpizzasdoces" type="button" name="fecharcardapio">Fechar</button>
                     <table>
                         <tr>
+                            <th id="numeropizza">Número</th>
                             <th id="saborpizza">Sabor</th>
-                            <th id="precopizza">Preço</th>
+                            <th id="descricao">Ingredientes</th>
+                            <th id="precopizza">Grande</th>
+                            <th id="precobroto">Broto</th>
                         </tr>
-                        <c:forEach var="esfiha" items="${esfihas}">
+                        <c:forEach var="doce" items="${doces}">
                             <tr>
-                                <td class="celulas">${esfiha.nome}</td>
-                                <td class="celulas">${esfiha.preco}</td>
+                                <td class="celulas">${doce.codigo}</td>
+                                <td class="celulas">${doce.nome}</td>
+                                <td>${doce.descricao}</td>
+                                <td class="celulas">${doce.preco}</td>
+                                <td class="celulas">${doce.precoBroto}</td>
                             </tr>
                         </c:forEach>
                     </table>
-                    <button class="buttonsfecharesfirras" type="button" name="fecharcardapio">Fechar</button>
-                </div>
-
-                <button id="abrefogazzas" type="button" name="abreesfogazzas">Abrir Fogazzas</button>
-
-                <div class="mostrarfogazzas">
-                    <button class="buttonsfecharfogazzas" type="button" name="fecharcardapio">Fechar</button>
-                    <table>
-                        <tr>
-                            <th id="saborpizza">Sabor</th>
-                            <th id="descricao">Descrição</th>
-                            <th id="precopizza">Preço</th>
-                        </tr>
-                        <c:forEach var="fogazza" items="${fogazzas}">
-                            <tr>
-                                <td class="celulas">${fogazza.nome}</td>
-                                <td>${fogazza.descricao}</td>
-                                <td class="celulas">${fogazza.preco}</td>
-                            </tr>
-                        </c:forEach>
-                    </table>
-                    <button class="buttonsfecharfogazzas" type="button" name="fecharcardapio">Fechar</button>
+                    <button class="buttonsfecharpizzasdoces" type="button" name="fecharcardapio">Fechar</button>
                 </div>
 
                 <button id="abrebordas" type="button" name="abrebordas">Abrir Bordas</button>
@@ -144,20 +130,18 @@
                     <button class="buttonsfecharbordas" type="button" name="fecharcardapio">Fechar</button>
                 </div>
 
-                <button id="abrebebidas" type="button" name="abredoces">Abrir Bebidas</button>
+                <button id="abrebebidas" type="button" name="abrebebidas">Abrir Bebidas</button>
 
                 <div class="mostrarbebidas">
                     <button class="buttonsfecharbebidas" type="button" name="fecharcardapio">Fechar</button>
                     <table>
                         <tr>
-                            <th id="numeropizza">Número</th>
-                            <th id="saborpizza">Sabor</th>
-                            <th id="descricao">Descrição</th>
+                            <th id="saborpizza">Bebida</th>
+                            <th id="descricao">Tamanho</th>
                             <th id="precopizza">Preço</th>
                         </tr>
                         <c:forEach var="drinks" items="${bebidas}">
                             <tr>
-                                <td class="celulas">${drinks.codigo}</td>
                                 <td class="celulas">${drinks.nome}</td>
                                 <td>${drinks.descricao}</td>
                                 <td class="celulas">${drinks.preco}</td>
@@ -171,19 +155,19 @@
             <div class="sessoes" id="sessaolocalizacao">
                 <h1 class="titulos">Localização</h1>
                 <hr/>
-                <p>Rua Gregório Ferreira, 80 - Jardim São Pedro, São Paulo - SP</p>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d914.2936291120297!2d-46.66651697077578!3d-23.562174899042642!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9709961ca361e7cd!2sMargherita+Pizzeria!5e0!3m2!1spt-BR!2sbr!4v1502195041666" allowfullscreen></iframe>
-            </div>
-
+                <p>Rua Santo Alberico Crescitelli, 60 - Vila Missionária, São Paulo - SP</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3653.6167850134857!2d-46.6503017854582!3d-23.689658584619345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce45150db9fbf1%3A0x8e1d8177fa6adea5!2sPizzaria+e+Bebidas+Uemar!5e0!3m2!1spt-BR!2sbr!4v1503859105457" allowfullscreen></iframe>
+              </div>
             <footer id="sessaocontato">
               <div class="sessoes">
                 <h1 class="titulos">Contato</h1>
                 <hr/>
-                <h2><a href="tel:01156116122">5611-6122</a><br/>
-                    <a href="tel:011983622251">98362-2251 </a><img src="_imagens/whatsapp.png"></h2>
-                <p>De Segunda à Quinta e Domingo das 18h às 00h<br/>
-                  Sexta e Sábado das 18h às 01h</p>
-                <p id="copyright">Copyright (c) Jonata Hessa Copyright Holder All Rights Reserved.</p>
+                <h2><a href="tel:01138528733">3852-8733</a><br/>
+                    <a href="tel:01156126481">5612-6481</a><br/>
+                    <a href="tel:01156213815">5631-3815</a></h2>
+                <p>De Segunda à Domingo das 18h às 00h</p>
+                <p id="copyright">Copyright (c) Pizzaria Uemar Copyright Holder All Rights Reserved.<br/>
+                Developed by Jonata Hessa.</p>
               </div>
             </footer>
         </section>

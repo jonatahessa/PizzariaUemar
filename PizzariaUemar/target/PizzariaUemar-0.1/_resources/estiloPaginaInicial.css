@@ -36,8 +36,8 @@ section {
   text-decoration: none;
   height: 100%;
   float: right;
-  width: 13%;
-  font-size: 150%;
+  width: 11%;
+  font-size: 130%;
   font-weight: bold;
   font-family: 'Josefin Sans', sans-serif;
   transition: 1s;
@@ -140,7 +140,7 @@ section {
 #fachada img {
     width: 100%;
     max-width: 550px;
-    border: 10px solid #898989;
+    border: 10px solid #ababab;
 }
 
 #sessaopromocoes {
@@ -154,7 +154,7 @@ section {
   display: block;
   margin: 2% auto;
   text-align: center;
-  font-family: Calibri;
+  font-family: 'Jaldi', sans-serif;
 
 }
 
@@ -168,7 +168,7 @@ section {
 
 .paineispromo p {
   font-size: 200%;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Jaldi', sans-serif;
   font-weight: bold;
   line-height: 140%;
   color: #a6a0a0;
@@ -195,7 +195,7 @@ section {
     display: none;
 }
 
-.mostraresfirras {
+.mostrarpizzasdoces{
     width: 100%;
     height: auto;
     position: static;
@@ -207,23 +207,11 @@ section {
     display: none;
 }
 
-.mostraresfirras p {
+.mostrarpizzasdoces p {
   font-family: 'Hind', sans-serif;
   color: #a69090;
   font-size: 150%;
 
-}
-
-.mostrarfogazzas {
-    width: 100%;
-    height: auto;
-    position: static;
-    transition: 1s;
-    animation-name: exibir;
-    animation-duration: 3s;
-    animation-fill-mode: both;
-    animation-timing-function: ease-in-out;
-    display: none;
 }
 
 .mostrarbordas {
@@ -268,13 +256,7 @@ section {
     color: #a69090;
 }
 
-.mostraresfirras table {
-    width: 100%;
-    font-family: 'Hind', sans-serif;
-    color: #a69090;
-}
-
-.mostrarfogazzas table {
+.mostrarpizzasdoces table {
     width: 100%;
     font-family: 'Hind', sans-serif;
     color: #a69090;
@@ -296,12 +278,7 @@ section {
     color: black;
 }
 
-.mostraresfirras table tr:nth-child(odd) {
-    background-color: #ccc;
-    color: black;
-}
-
-.mostrarfogazzas table tr:nth-child(odd) {
+.mostrarpizzasdoces table tr:nth-child(odd) {
     background-color: #ccc;
     color: black;
 }
@@ -319,11 +296,7 @@ section {
     text-align: left;
 }
 
-.mostraresfirras table th {
-    text-align: left;
-}
-
-.mostrarfogazzas table th {
+.mostrarpizzasdoces table th {
     text-align: left;
 }
 
@@ -359,21 +332,7 @@ section {
     display: block;
 }
 
-.mostraresfirras button {
-    border: none;
-    background: transparent;
-    font-family: 'Permanent Marker', cursive;
-    font-weight: bold;
-    color: #f72b2f;
-    transition: 1s;
-    width: 100%;
-    height: 60px;
-    font-size: 200%;
-    margin: 0 auto;
-    display: block;
-}
-
-.mostrarfogazzas button {
+.mostrarpizzasdoces button {
     border: none;
     background: transparent;
     font-family: 'Permanent Marker', cursive;
@@ -441,27 +400,7 @@ section {
   display: block;
 }
 
-#abreesfirras {
-  border: none;
-  background: transparent;
-  font-family: 'Permanent Marker', cursive;
-  font-weight: bold;
-  color: #f72b2f;
-  transition: 1s;
-  width: 100%;
-  font-size: 300%;
-  margin: 4% auto;
-  left: 0;
-  right: 0;
-  display: block;
-  animation-name: esconder;
-  animation-duration: 3s;
-  animation-fill-mode: both;
-  animation-timing-function: ease-in-out;
-  display: block;
-}
-
-#abrefogazzas {
+#abrepizzasdoces {
   border: none;
   background: transparent;
   font-family: 'Permanent Marker', cursive;
@@ -510,15 +449,20 @@ section {
 }
 
 #saborpizza {
-    width: 25%;
+    width: 20%;
     text-align: center;
 }
 
 #descricao {
-    width: 60%;
+    width: 40%;
 }
 
 #precopizza {
+    width: 10%;
+    text-align: center;
+}
+
+#precobroto {
     width: 10%;
     text-align: center;
 }

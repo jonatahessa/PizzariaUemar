@@ -18,20 +18,14 @@ function abrirEditar(form) {
   inputs = document.querySelectorAll(".inputseditar");
   var select = document.querySelector("#selecteditar");
   var optionPizza = document.createElement("option");
-  var optionPizzaFogazza = document.createElement("option");
-  var optionEsfiha = document.createElement("option");
-  var optionFogazza = document.createElement("option");
+  var optionPizzaDoce = document.createElement("option");
   var optionBorda = document.createElement("option");
   var optionBebida = document.createElement("option");
   var optionPromo = document.createElement("option");
   optionPizza.innerHTML = "Pizza";
   optionPizza.setAttribute("value", "PIZZA");
-  optionEsfiha.innerHTML = "Esfiha";
-  optionEsfiha.setAttribute("value", "ESFIHA");
-  optionFogazza.innerHTML = "Fogazza";
-  optionFogazza.setAttribute("value", "FOGAZZA");
-  optionPizzaFogazza.innerHTML = "Pizza/Fogazza";
-  optionPizzaFogazza.setAttribute("value", "PIZZA/FOGAZZA");
+  optionPizzaDoce.innerHTML = "Pizza Doce";
+  optionPizzaDoce.setAttribute("value", "DOCE");
   optionBorda.innerHTML = "Borda";
   optionBorda.setAttribute("value", "BORDA");
   optionBebida.innerHTML = "Bebida";
@@ -44,36 +38,14 @@ function abrirEditar(form) {
   }
   if (form[4].value == 'PIZZA') {
     select.appendChild(optionPizza);
-    select.appendChild(optionPizzaFogazza);
-    select.appendChild(optionEsfiha);
-    select.appendChild(optionFogazza);
+    select.appendChild(optionPizzaDoce);
     select.appendChild(optionBebida);
     select.appendChild(optionBorda);
     select.appendChild(optionPromo);
 
-  } else if (form[4].value == 'ESFIHA') {
-    select.appendChild(optionEsfiha);
+  } else if (form[4].value == 'DOCE') {
+    select.appendChild(optionPizzaDoce);
     select.appendChild(optionPizza);
-    select.appendChild(optionPizzaFogazza);
-    select.appendChild(optionFogazza);
-    select.appendChild(optionBebida);
-    select.appendChild(optionBorda);
-    select.appendChild(optionPromo);
-
-  } else if (form[4].value == 'PIZZA/FOGAZZA') {
-    select.appendChild(optionPizzaFogazza);
-    select.appendChild(optionPizza);
-    select.appendChild(optionEsfiha);
-    select.appendChild(optionFogazza);
-    select.appendChild(optionBebida);
-    select.appendChild(optionBorda);
-    select.appendChild(optionPromo);
-
-  } else if (form[4].value == 'FOGAZZA') {
-    select.appendChild(optionFogazza);
-    select.appendChild(optionPizza);
-    select.appendChild(optionPizzaFogazza);
-    select.appendChild(optionEsfiha);
     select.appendChild(optionBebida);
     select.appendChild(optionBorda);
     select.appendChild(optionPromo);
@@ -82,18 +54,14 @@ function abrirEditar(form) {
     select.appendChild(optionBorda);
     select.appendChild(optionBebida);
     select.appendChild(optionPizza);
-    select.appendChild(optionPizzaFogazza);
-    select.appendChild(optionEsfiha);
-    select.appendChild(optionFogazza);
+    select.appendChild(optionPizzaDoce);
     select.appendChild(optionPromo);
 
   } else if (form[4].value == 'BEBIDA') {
     select.appendChild(optionBebida);
     select.appendChild(optionBorda);
     select.appendChild(optionPizza);
-    select.appendChild(optionPizzaFogazza);
-    select.appendChild(optionEsfiha);
-    select.appendChild(optionFogazza);
+    select.appendChild(optionPizzaDoce);
     select.appendChild(optionPromo);
 
   } else if (form[4].value == 'PROMOCAO') {
@@ -101,18 +69,14 @@ function abrirEditar(form) {
     select.appendChild(optionBebida);
     select.appendChild(optionBorda);
     select.appendChild(optionPizza);
-    select.appendChild(optionPizzaFogazza);
-    select.appendChild(optionEsfiha);
-    select.appendChild(optionFogazza);
+    select.appendChild(optionPizzaDoce);
 
   } else {
     select.appendChild(optionPizza);
-    select.appendChild(optionPizzaFogazza);
+    select.appendChild(optionPizzaDoce);
     select.appendChild(optionPromo);
     select.appendChild(optionBebida);
     select.appendChild(optionBorda);
-    select.appendChild(optionEsfiha);
-    select.appendChild(optionFogazza);
   }
 
 

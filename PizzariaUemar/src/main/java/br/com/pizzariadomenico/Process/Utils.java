@@ -30,17 +30,10 @@ public class Utils {
 
         return pizzas;
     }
-
-    public static List<Produto> ListarPizzasPaginaInicialEsfiha() throws Exception {
-        List<Produto> pizzas = new ArrayList<>();
-        pizzas = br.com.pizzariadomenico.Daos.DaoProduto.listarPaginaInicialEsfiha();
-
-        return pizzas;
-    }
     
-    public static List<Produto> ListarPizzasPaginaInicialFogazza() throws Exception {
+    public static List<Produto> ListarPizzasPaginaInicialPizzasDoces() throws Exception {
         List<Produto> pizzas = new ArrayList<>();
-        pizzas = br.com.pizzariadomenico.Daos.DaoProduto.listarPaginaInicialFogazza();
+        pizzas = br.com.pizzariadomenico.Daos.DaoProduto.listarPaginaInicialPizzaDoce();
 
         return pizzas;
     }
