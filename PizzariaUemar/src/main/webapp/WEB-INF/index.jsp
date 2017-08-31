@@ -155,7 +155,8 @@
             <div class="sessoes" id="sessaolocalizacao">
                 <h1 class="titulos">Localização</h1>
                 <hr/>
-                <p>Rua Santo Alberico Crescitelli, 60 - Vila Missionária, São Paulo - SP</p>
+                <p>Rua Santo Alberico Crescitelli, 60 - Vila Missionária, São Paulo - SP<br/>
+                    em à Paróquia São Francisco Xavier.</p>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3653.6167850134857!2d-46.6503017854582!3d-23.689658584619345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce45150db9fbf1%3A0x8e1d8177fa6adea5!2sPizzaria+e+Bebidas+Uemar!5e0!3m2!1spt-BR!2sbr!4v1503859105457" allowfullscreen></iframe>
               </div>
             <footer id="sessaocontato">
