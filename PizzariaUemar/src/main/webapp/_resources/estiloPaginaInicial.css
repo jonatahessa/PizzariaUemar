@@ -37,7 +37,7 @@ section {
   height: 100%;
   float: right;
   width: 11%;
-  font-size: 130%;
+  font-size: 115%;
   font-weight: bold;
   font-family: 'Josefin Sans', sans-serif;
   transition: 1s;
@@ -139,12 +139,12 @@ section {
 
 #fachada img {
     width: 100%;
-    max-width: 550px;
+    max-width: 450px;
     border: 10px solid #ababab;
 }
 
 #sessaopromocoes {
-  margin-top: 5%;
+  margin-top: 10%;
 }
 
 .paineispromo {
@@ -248,24 +248,28 @@ section {
     width: 100%;
     font-family: 'Hind', sans-serif;
     color: #a69090;
+    font-size: 20px;
 }
 
 .mostrarbordas table {
     width: 100%;
     font-family: 'Hind', sans-serif;
     color: #a69090;
+    font-size: 20px;
 }
 
 .mostrarpizzasdoces table {
     width: 100%;
     font-family: 'Hind', sans-serif;
     color: #a69090;
+    font-size: 20px;
 }
 
 .mostrarbebidas table {
     width: 100%;
     font-family: 'Hind', sans-serif;
     color: #a69090;
+    font-size: 20px;
 }
 
 .mostrarpizzas table tr:nth-child(odd) {

@@ -63,7 +63,7 @@ button {
 }
 
 #janelanovo {
-  width: 60%;
+  width: 50%;
   height: 600px;
   position: fixed;
   left: 0;
@@ -81,8 +81,8 @@ button {
 }
 
 #janelaeditar {
-  width: 60%;
-  height: 650px;
+  width: 50%;
+  height: 675px;
   position: fixed;
   left: 0;
   top: 0;

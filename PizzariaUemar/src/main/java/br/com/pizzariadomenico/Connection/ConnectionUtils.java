@@ -23,9 +23,9 @@ public class ConnectionUtils {
             
             //Configurando a conexao com o banco de dados
             String serveName = "bancouemar.mysql.uhserver.com:3306"; // Caminho do servidor do BD
-            String mydatabase = "bancouemar"; // Nome do banco de dados
+            String mydatabase = "pizzariauemar"; // Nome do banco de dados
             String url = "jdbc:mysql://" + serveName + "/" + mydatabase;
-            String username = "uemar01"; // Nome de usuario
+            String username = "uemar03"; // Nome de usuario
             String password = "pizz@ri@2017"; // Senha de acesso
             connection = DriverManager.getConnection(url, username, password);
             
