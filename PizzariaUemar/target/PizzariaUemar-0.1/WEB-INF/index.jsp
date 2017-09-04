@@ -165,8 +165,8 @@
                 <hr/>
                 <h2><a href="tel:01138528733">3852-8733</a><br/>
                     <a href="tel:01156126481">5612-6481</a><br/>
-                    <a href="tel:01156213815">5631-3815</a></h2>
-                <p>De Segunda à Domingo das 18h às 00h</p>
+                    <a href="tel:01156213815">5621-3815</a></h2>
+                <p>De Terça à Domingo das 18h às 00h</p>
                 <p id="copyright">Copyright (c) Pizzaria Uemar Copyright Holder All Rights Reserved.<br/>
                 Developed by Jonata Hessa.</p>
               </div>
