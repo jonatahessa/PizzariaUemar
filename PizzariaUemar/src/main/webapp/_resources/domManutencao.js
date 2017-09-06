@@ -30,41 +30,41 @@ function abrirEditar(form) {
   optionBorda.setAttribute("value", "BORDA");
   optionBebida.innerHTML = "Bebida";
   optionBebida.setAttribute("value", "BEBIDA");
-  optionPromo.innerHTML = "Promoção";
+  optionPromo.innerHTML = "Promocao";
   optionPromo.setAttribute("value", "PROMOCAO");
 
   for (var i = 0; i < inputs.length; i++) {
     inputs[i].value = form[i].value;
   }
-  if (form[4].value == 'PIZZA') {
+  if (form[5].value == 'PIZZA') {
     select.appendChild(optionPizza);
     select.appendChild(optionPizzaDoce);
     select.appendChild(optionBebida);
     select.appendChild(optionBorda);
     select.appendChild(optionPromo);
 
-  } else if (form[4].value == 'DOCE') {
+  } else if (form[5].value == 'DOCE') {
     select.appendChild(optionPizzaDoce);
     select.appendChild(optionPizza);
     select.appendChild(optionBebida);
     select.appendChild(optionBorda);
     select.appendChild(optionPromo);
 
-  } else if (form[4].value == 'BORDA') {
+  } else if (form[5].value == 'BORDA') {
     select.appendChild(optionBorda);
     select.appendChild(optionBebida);
     select.appendChild(optionPizza);
     select.appendChild(optionPizzaDoce);
     select.appendChild(optionPromo);
 
-  } else if (form[4].value == 'BEBIDA') {
+  } else if (form[5].value == 'BEBIDA') {
     select.appendChild(optionBebida);
     select.appendChild(optionBorda);
     select.appendChild(optionPizza);
     select.appendChild(optionPizzaDoce);
     select.appendChild(optionPromo);
 
-  } else if (form[4].value == 'PROMOCAO') {
+  } else if (form[5].value == 'PROMOCAO') {
     select.appendChild(optionPromo);
     select.appendChild(optionBebida);
     select.appendChild(optionBorda);
